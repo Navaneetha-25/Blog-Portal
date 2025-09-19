@@ -1,0 +1,64 @@
+/* index.css or App.css */
+
+body {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;  /* full viewport */
+    background: linear-gradient(to bottom right, #ffdee9, #b5fffc);
+    background-attachment: fixed; /* fixes gradient to cover full page */
+    background-size: cover;
+    color: #222;
+
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+/* Search bar */
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Blog card */
+.blog-card {
+    background: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .app-container {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
